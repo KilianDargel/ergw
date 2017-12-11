@@ -30,8 +30,8 @@ Experimental features may change or be removed at any moment. Configuration sett
 for them are not guaranteed to work across versions. Check [CONFIG.md](CONFIG.md) and
 [NEWS.md](NEWS.md) on version upgrades.
 
- * rate limiting, defaults to 100 requests/second
- * metrics, see [METRICS.md](METRICS.md)
+ * Rate limiting, defaults to 100 requests/second
+ * Metrics, see [METRICS.md](METRICS.md)
 
 RADIUS over Gi/SGi
 ------------------
@@ -39,7 +39,7 @@ RADIUS over Gi/SGi
 The GGSN Gn interface supports RADIUS over the Gi interface as specified by 3GPP TS 29.061 Section 16.
 At the moment, only the Authentication and Authorization is supported, Accounting is not supported.
 
-See [RADIUS.md](RADIUS.md) for a list of supported Attrbiutes.
+See [RADIUS.md](RADIUS.md) for a list of supported Attributes.
 
 Many thanks to [On Waves](https://www.on-waves.com/) for sponsoring the RADIUS Authentication implementation.
 
@@ -71,10 +71,10 @@ Using rebar:
 RUNNING
 -------
 
-A erGW installation needs a data path provider to handle the GTP-U path. This instance can be installed on the same host or a different host.
+An erGW installation needs a data path provider to handle the GTP-U path. This instance can be installed on the same or a different host.
 
-* for a data path suitable for GGSN/PGW see: [GTP-u-KMod](https://github.com/travelping/gtp_u_kmod)
-* for a data path suitable for GTPhub see: [GTP-u-EDP](https://github.com/travelping/gtp_u_edp)
+* For a data path suitable for GGSN/PGW see: [GTP-u-KMod](https://github.com/travelping/gtp_u_kmod)
+* For a data path suitable for GTPhub see: [GTP-u-EDP](https://github.com/travelping/gtp_u_edp)
 
 erGW can be started with the normal Erlang command line tools, e.g.:
 
@@ -154,7 +154,7 @@ This requires a suitable ergw.config, e.g.:
              ]}
     ].
 
-The configuration is documented in [CONFIG.md](CONFIG.md)
+The configuration is documented in [CONFIG.md](CONFIG.md).
 
 This process can be simplified by using [enit](https://github.com/travelping/enit). A sample config that only requires minimal adjustment for IP's, hostnames and interfaces can be found in priv/enit/ggsn.
 Install those files to / (root) and start with ```enit startfg ergw```.
